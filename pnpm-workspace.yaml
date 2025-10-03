@@ -1,0 +1,8 @@
+packages:
+  - apps/*
+  - packages/*
+  - mobile/*
+packages:
+  - apps/*
+  - packages/*
+  - mobile/*

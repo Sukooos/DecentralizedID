@@ -1,0 +1,17 @@
+name: Release (tag + changelog)
+on:
+  push:
+    branches: [ main ]
+permissions:
+  contents: write
+jobs:
+  release:
+    if: contains(github.event.head_commit.message, 'chore(release): version packages')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create Git tag
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          git tag "v$VERSION" || true
+          git push origin "v$VERSION" || true
