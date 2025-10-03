@@ -1,0 +1,15 @@
+- name: size/XS
+  color: 94D3A2
+  description: "<10 files changed"
+- name: size/S
+  color: 7FD1B9
+  description: "10-29 files changed"
+- name: size/M
+  color: F1E05A
+  description: "30-99 files changed"
+- name: size/L
+  color: E99695
+  description: "100-499 files changed"
+- name: size/XL
+  color: D93F0B
+  description: "500+ files changed"

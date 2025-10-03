@@ -1,0 +1,8 @@
+# Core DID flows
+/apps/issuer-svc/   @Sukooos
+/apps/verifier-svc/ @Sukooos
+/mobile/wallet/     @Sukooos
+/packages/**        @Sukooos
+
+# Default
+*                   @Sukooos
